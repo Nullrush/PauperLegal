@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
@@ -13,7 +14,8 @@ namespace LegalityBuilder.Domain
         public bool LegalOnline { get; set; }
         public bool LegalInPaper { get; set; }
 
-        /*public List<string> RelatedSets { get; set; }
+        [JsonIgnore]
+        public List<string> RelatedSets { get; set; }
 
         public void AddSet(string setName)
         {
@@ -21,7 +23,7 @@ namespace LegalityBuilder.Domain
                 RelatedSets = new List<string>();
 
             RelatedSets.Add(setName);
-        }*/
+        }
 
         public void UpdateRarity(Rarity rarity, bool onlineIllegal = false, bool paperIllegal = false)
         {
@@ -35,8 +37,7 @@ namespace LegalityBuilder.Domain
 
         public void CleanName()
         {
-            Name = Regex.Replace(Name, "[^a-zA-Z]+", "", RegexOptions.Compiled);
-            //Name = Name.
+            Name = Regex.Replace(Name.ToLower(), "[^a-zA-Z]+", "", RegexOptions.Compiled);
         }
     }
 

@@ -10,35 +10,31 @@ namespace LegalityBuilder
 {
     internal class Program
     {
-        public static List<CardSet> AllSets { get; set; }
-        public static List<Card> AllCards { get; set; }
-        public static HashSet<string> PaperIllegalCards { get; set; } 
-        public static HashSet<string> OnlineIllegalCards { get; set; } 
+        public static IEnumerable<CardSet> AllSets { get; set; }
+        public static IEnumerable<Card> AllCards { get; set; }
+        public static ISet<string> PaperIllegalCards { get; set; }
+        public static ISet<string> OnlineIllegalCards { get; set; }
+        public static readonly string OutputPath = "Output/";
 
         public static void Main(string[] args)
         {
-
             PaperIllegalCards = new HashSet<string>();
             OnlineIllegalCards = new HashSet<string>();
 
-            const string filePath = @"AllSetsArray.json";
+            const string filePath = @"Resources/AllSetsArray.json";
 
             if (File.Exists(filePath))
             {
                 ReadAllSetsJson(filePath);
 
-                WriteAllSetsJson(@"allSetsCompiled.json");
+                WriteOutputJson(@"allSetsCompiled.json", AllSets);
 
-                PopulateCards(@"OnlineOnly.txt", PaperIllegalCards);
-                PopulateCards(@"OnlineIllegal.txt", OnlineIllegalCards);
+                PopulateCards(@"Resources/PaperIllegal.txt", PaperIllegalCards);
+                PopulateCards(@"Resources/OnlineIllegal.txt", OnlineIllegalCards);
 
                 AllCards = FlattenSets();
 
-                WriteAllCardsJson(@"allCardsCompiled.json");
-
-                Debug.WriteLine(IsLegalCard("Creature Bond"));
-                Debug.WriteLine(IsLegalCard("Creature Bond", onlineOnly: true));
-                Debug.WriteLine(IsLegalCard("Creature Bond", paperOnly: true));
+                WriteOutputJson(@"allCardsCompiled.json", AllCards);
             }
             else
             {
@@ -60,13 +56,9 @@ namespace LegalityBuilder
         {
             try
             {
-                // Create an instance of StreamReader to read from a file.
-                // The using statement also closes the StreamReader.
                 using (var sr = new StreamReader(filePath))
                 {
                     string line;
-                    // Read and display lines from the file until the end of 
-                    // the file is reached.
                     while ((line = sr.ReadLine()) != null)
                     {
                         cardHashSet.Add(line.Trim());
@@ -75,38 +67,43 @@ namespace LegalityBuilder
             }
             catch (Exception e)
             {
-                // Let the user know what went wrong.
                 Debug.WriteLine("The file could not be read:");
                 Debug.WriteLine(e.Message);
             }
         }
 
-        private static List<Card> FlattenSets()
+        private static IEnumerable<Card> FlattenSets()
         {
             var allCardsSet = new Dictionary<string, Card>();
 
-            foreach (var cardSet in AllSets)
-            {
-                foreach (var card in cardSet.Cards)
-                {
-                    if(card.Rarity == Rarity.BasicLand)
-                        continue;
+            var allCards = AllSets
+                .SelectMany(cs =>
+                    cs.Cards.Select(c =>
+                    {
+                        c.CleanName();
+                        c.AddSet(cs.Name);
+                        return c;
+                    })
+                );
 
-                    var cardName = card.Name;
-                    if (allCardsSet.ContainsKey(cardName))
-                    {
-                        var tempCard = allCardsSet[cardName];
-                        tempCard.UpdateRarity(card.Rarity, OnlineIllegalCards.Contains(cardName), PaperIllegalCards.Contains(cardName));
-                    }
-                    else
-                    {
-                        card.UpdateRarity(card.Rarity, OnlineIllegalCards.Contains(cardName), PaperIllegalCards.Contains(cardName));
-                        allCardsSet.Add(card.Name, card);
-                    }
+            foreach (var card in allCards)
+            {
+                var cardName = card.Name;
+                if (allCardsSet.ContainsKey(cardName))
+                {
+                    var tempCard = allCardsSet[cardName];
+                    tempCard.UpdateRarity(card.Rarity, OnlineIllegalCards.Contains(cardName),
+                    PaperIllegalCards.Contains(cardName));
+                }
+                else
+                {
+                    card.UpdateRarity(card.Rarity, OnlineIllegalCards.Contains(cardName),
+                    PaperIllegalCards.Contains(cardName));
+                    allCardsSet.Add(card.Name, card);
                 }
             }
 
-            return allCardsSet.Values.Where(card=> card.LegalInPaper || card.LegalOnline).ToList();
+            return allCardsSet.Values.ToList();
         }
 
         private static void ReadAllSetsJson(string filePath)
@@ -121,16 +118,21 @@ namespace LegalityBuilder
             }
         }
 
-        private static void WriteAllSetsJson(string compPath)
+        private static void WriteOutputJson(string compPath, IEnumerable<object> things)
         {
+            if (string.IsNullOrEmpty(compPath))
+                return;
+
+            Directory.CreateDirectory(OutputPath);
+
             if (File.Exists(compPath))
             {
                 File.Delete(compPath);
             }
 
-            using (var sw = new StreamWriter(compPath))
+            using (var sw = new StreamWriter(OutputPath + compPath))
             {
-                sw.WriteLine(JsonConvert.SerializeObject(AllSets));
+                sw.WriteLine(JsonConvert.SerializeObject(things));
             }
         }
 

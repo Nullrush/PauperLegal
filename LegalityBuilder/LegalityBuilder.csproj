@@ -54,17 +54,17 @@
     <Compile Include="Domain\Set.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AllSetsArray.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="OnlineIllegal.txt">
+    <None Include="Resources\AllSetsArray.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="OnlineOnly.txt">
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OnlineIllegal.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\PaperIllegal.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

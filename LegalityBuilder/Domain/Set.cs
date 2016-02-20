@@ -5,6 +5,6 @@ namespace LegalityBuilder.Domain
     public class CardSet
     {
         public string Name { get; set; }
-        public List<Card> Cards { get; set; }
+        public IEnumerable<Card> Cards { get; set; }
     }
 }
