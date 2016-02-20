@@ -42,16 +42,6 @@ namespace LegalityBuilder
             }
         }
 
-        private static bool IsLegalCard(string cardName, bool onlineOnly = false, bool paperOnly = false)
-        {
-            if (onlineOnly)
-                return !OnlineIllegalCards.Contains(cardName);
-            if (paperOnly)
-                return !PaperIllegalCards.Contains(cardName);
-
-            return !PaperIllegalCards.Contains(cardName) || !OnlineIllegalCards.Contains(cardName);
-        }
-
         private static void PopulateCards(string filePath, ISet<string> cardHashSet)
         {
             try
@@ -136,17 +126,14 @@ namespace LegalityBuilder
             }
         }
 
-        private static void WriteAllCardsJson(string allcardscompiledJson)
+        /*private static bool IsLegalCard(string cardName, bool onlineOnly = false, bool paperOnly = false)
         {
-            if (File.Exists(allcardscompiledJson))
-            {
-                File.Delete(allcardscompiledJson);
-            }
+            if (onlineOnly)
+                return !OnlineIllegalCards.Contains(cardName);
+            if (paperOnly)
+                return !PaperIllegalCards.Contains(cardName);
 
-            using (var sw = new StreamWriter(allcardscompiledJson))
-            {
-                sw.WriteLine(JsonConvert.SerializeObject(AllCards));
-            }
-        }
+            return !PaperIllegalCards.Contains(cardName) || !OnlineIllegalCards.Contains(cardName);
+        }*/
     }
 }
