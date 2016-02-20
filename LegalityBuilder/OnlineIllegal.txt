@@ -1,0 +1,395 @@
+﻿Rousing of Souls
+Brago's Representative
+Custodi Squire
+Enraged Revolutionary
+Grenzo's Cutthroat
+Grudge Keeper
+Marchesa's Emissary
+Selvala's Enforcer
+Burnt Offering
+Remove Enchantments
+Metamorphosis
+Abbey Matron
+Adarkar Unicorn
+Aisling Leprechaun
+Arnjlot's Ascent
+Artifact Possession
+Artifact Ward
+Awesome Presence
+Balduvian Shaman
+Balduvian War-Makers
+Barbarian Guides
+Battering Ram
+Blazing Effigy
+Bog Rats
+Bone Shaman
+Broken Dam
+Burning Cloak
+Camel
+Clergy of the Holy Nimbus
+Cooperation
+Deep Water
+Desert Nomads
+Dire Wolves
+Drafna's Restoration
+Earthbind
+Earthlore
+Elven Fortress
+Elvish Scout
+Emerald Dragonfly
+Enchanted Being
+Energy Tap
+Eternal Warrior
+Equinox
+False Demise
+False Orders
+False Peace
+Feast of the Unicorn
+Feint
+Festival
+Flood
+Folk of An-Havva
+Fortified Area
+Foxfire
+Fruition
+Fylgja
+Fyndhorn Druid
+Gaze of Pain
+Giant Albatross
+Giant Shark
+Giant Turtle
+Gift of the Woods
+Glyph of Delusion
+Glyph of Destruction
+Glyph of Doom
+Glyph of Life
+Glyph of Reincarnation
+Goblin Rock Sled
+Goblin Sappers
+Gorilla Berserkers
+Grizzled Wolverine
+Guardian Angel
+Holy Armor
+Howling Fury
+Hurr Jackal
+Icatian Infantry
+Icatian Moneychanger
+Imposing Visage
+Indestructible Aura
+Ingenious Thief
+Initiates of the Ebon Hand
+Inquisition
+Kelsinko Ranger
+Kjeldoran Escort
+Kjeldoran Skyknight
+Kjeldoran Warrior
+Living Armor
+Marsh Viper
+Martyrdom
+Moor Fiend
+Morale
+Nafs Asp
+Noble Steeds
+Norritt
+Norwood Riders
+Pestilence Rats
+Phyrexian Gremlins
+Piety
+Pikemen
+Plague Rats
+Preemptive Strike
+Priest of Yawgmoth
+Rally
+Reef Pirates
+Reverse Polarity
+Riding Red Hare
+Rime Dryad
+Riptide
+Royal Herbalist
+Runesword
+Sacred Knight
+Samite Alchemist
+Savaen Elves
+Seizures
+Sengir Bats
+Shelkin Brownie
+Shu Grain Caravan
+Snowfall
+Soldevi Adnate
+Soldevi Heretic
+Soldevi Sentry
+Soldevi Steam Beast
+Soul Barrier
+Stench of Decay
+Subdue
+Tarpan
+Taste of Paradise
+The Brute
+Tidal Flats
+Trade Caravan
+Undergrowth
+Undying Beast
+Venarian Gold
+Venom
+Veteran's Voice
+Wall of Caltrops
+Wall of Heat
+Wall of Shadows
+War Elephant
+Whip Vine
+Wind Sail
+Wu Light Cavalry
+Wu Scout
+Zuran Enchanter
+Agent of Stromgald
+Army of Allah
+Avoid Fate
+Barbtooth Wurm
+Battle Frenzy
+Carrier Pigeons
+Cemetery Gate
+Creature Bond
+Darkness
+Dark Maze
+Déjà Vu
+Erosion
+Errant Minion
+Fire Snake
+Fleet-Footed Monk
+Foresight
+Giant Slug
+Golden Bear
+Hoar Shade
+Homarid
+Land Leeches
+Marsh Gas
+Mobilize
+Mountain Goat
+Pit Scorpion
+Plated Wurm
+Pradesh Gypsies
+Rowan Treefolk
+Rust
+Seeker
+Shu Farmer
+Sisters of the Flame
+Steadfastness
+Steam Frigate
+Stone-Throwing Devils
+Transmutation
+Walking Dead
+Wall of Vapor
+Water Wurm
+Wei Ambush Force
+Wei Scout
+Willow Dryad
+Willow Faerie
+Word of Binding
+Yellow Scarves Cavalry
+Zodiac Dog
+Zodiac Rabbit
+Alaborn Grenadier
+Aliban's Tower
+Arctic Foxes
+Balduvian Bears
+Barbarian Horde
+Barbary Apes
+Bear Cub
+Blessed Wine
+Border Guard
+Brainwash
+Burning Fields
+Cat Warriors
+Chorus of Woe
+Clairvoyance
+Cloak of Feathers
+Cloud Pirates
+Craven Knight
+Dakmor Bat
+Dakmor Scorpion
+Deception
+Desert Sandstorm
+Devoted Hero
+Devouring Deep
+Devout Monk
+Durkwood Boars
+Dwarven Trader
+Dwarven Warriors
+Elvish Healer
+Enslaved Scout
+Extinguish
+Festival of Trokin
+Forest Bear
+Frozen Shade
+Fyndhorn Brownie
+Goblin Hero
+Gorilla Pack
+Gray Ogre
+Hand of Death
+Headless Horseman
+Hell Swarm
+Highland Giant
+Hipparion
+Homarid Warrior
+Hornet Cobra
+Imperial Edict
+Independent Troops
+Ironroot Treefolk
+Juniper Order Druid
+Keen-Eyed Archers
+Keepers of the Faith
+Kjeldoran Guard
+Lizard Warrior
+Lost Soul
+Lurking Nightstalker
+Lynx
+Marsh Goblins
+Mesa Falcon
+Merseine
+Mind Knives
+Mind Ravel
+Minotaur Warrior
+Miracle Worker
+Moaning Spirit
+Mons's Goblin Raiders
+Mountain Bandit
+Muck Rats
+Murk Dwellers
+Norwood Archers
+Norwood Warrior
+Ogre Berserker
+Ogre Warrior
+Omen
+Pearled Unicorn
+Power Leak
+Prismatic Ward
+Pyknite
+Raging Bull
+Raging Cougar
+Raiding Nightstalker
+Ray of Erasure
+Regal Unicorn
+Repentant Blacksmith
+Return to Battle
+Royal Falcon
+Sage's Knowledge
+Salvage
+Scarwood Goblins
+Scorching Spear
+Shu Defender
+Shu Elite Infantry
+Shu Foot Soldiers
+Skeletal Crocodile
+Skeletal Snake
+Sorcerous Sight
+Spring of Eternal Peace
+Straw Soldiers
+Talas Air Ship
+Talas Explorer
+Talas Merchant
+Talas Scout
+Tor Giant
+Touch of Brilliance
+Touch of Death
+Town Sentry
+Trained Jackal
+Trokin High Guard
+Updraft
+Vampiric Touch
+Virtuous Charge
+Vodalian Mage
+Vodalian Soldiers
+Volunteer Militia
+Wall of Earth
+Warrior's Charge
+Wielding the Green Dragon
+Willow Elf
+Wu Infantry
+Yellow Scarves Troops
+Zephyr Falcon
+Zodiac Goat
+Zodiac Rat
+Zodiac Rooster
+Zodiac Snake
+Cogwork Librarian
+Cogwork Spy
+Lurking Automaton
+Whispergear Sneak
+Goblin Grenade
+Disintegrate
+Kird Ape
+Fireball
+Unstable Mutation
+Ashnod's Altar
+Tormod's Crypt
+Cruel Edict
+Breath of Life
+Ashes to Ashes
+Feldon's Cane
+Goblin War Drums
+Desert
+Flying Men
+Enchantment Alteration
+Sage of Lat-Nam
+Rukh Egg
+Pyrotechnics
+Dream Fracture
+Wakedancer
+Brown Ouphe
+Swarm of Rats
+Moorish Cavalry
+Swamp Mosquito
+Guerrilla Tactics
+Ghost Ship
+Wolverine Pack
+Dark Heart of the Wood
+Painful Memories
+Dandân
+Storm Shaman
+Ley Druid
+Arenson's Aura
+Grapeshot Catapult
+Fountain of Youth
+Anti-Magic Aura
+Soldevi Sage
+Goblin Glider
+Squire
+Sinkhole
+Hymn to Tourach
+High Tide
+Mystic Remora
+Gaea's Touch
+Red Elemental Blast
+Blue Elemental Blast
+Active Volcano
+Flash Flood
+False Defeat
+Lava Burst
+Sunken City
+Essence Filter
+Lim-Dûl's High Guard
+Woolly Spider
+Psychic Purge
+Farrel's Zealot
+Spore Cloud
+Phyrexian War Beast
+Carnivorous Plant
+Yavimaya Ancients
+Argothian Treefolk
+Alabaster Potion
+Errand of Duty
+Orcish Mechanics
+Argivian Blacksmith
+Illusionary Forces
+Soul Kiss
+Clay Statue
+Flame Spirit
+Cranial Plating
+Frantic Search
+Empty the Warrens
+Grapeshot
+Invigorate
+Cloudpost
+Temporal Fissure
+Treasure Cruise
+Cloud of Faeries
